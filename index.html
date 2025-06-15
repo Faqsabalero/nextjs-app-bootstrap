@@ -159,8 +159,8 @@
                         </div>
                         <div>
                             <h4 class="font-semibold mb-1">WhatsApp</h4>
-                            <a href="https://wa.me/5491112345678" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700 transition-colors">
-                                +54 9 11 1234-5678
+                            <a href="https://wa.me/5493424284252" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700 transition-colors">
+                                +54 9 342 428-4252
                             </a>
                         </div>
                     </div>
@@ -187,7 +187,21 @@
             e.preventDefault();
             const fecha = this.querySelector('input[type="date"]').value;
             const horario = this.querySelector('select').value;
-            alert(`Turno reservado para el ${fecha} a las ${horario}hs`);
+            
+            // Formatear la fecha para mejor lectura
+            const fechaFormateada = new Date(fecha).toLocaleDateString('es-AR');
+            
+            // Crear el mensaje para WhatsApp
+            const mensaje = `Hola! Quisiera reservar un turno para el ${fechaFormateada} a las ${horario}hs`;
+            
+            // Número de WhatsApp de Yamil
+            const numeroWhatsApp = '5493424284252';
+            
+            // Crear el enlace de WhatsApp con el mensaje
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            
+            // Abrir WhatsApp en una nueva pestaña
+            window.open(urlWhatsApp, '_blank');
         });
     </script>
 </body>

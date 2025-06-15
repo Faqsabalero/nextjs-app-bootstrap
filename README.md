@@ -1,42 +1,35 @@
 # Barbería Yamil - Landing Page
 
-## Requisitos Previos
-1. Node.js (versión 16 o superior)
-2. npm (viene incluido con Node.js)
+Una landing page simple y moderna para una barbería, construida con HTML y Tailwind CSS.
 
-## Pasos para Ejecutar el Proyecto
+## Características
 
-1. Primero, clona o descarga este repositorio en tu computadora
+- Diseño moderno y responsivo
+- Banner principal con imagen de fondo
+- Sección de servicios con precios
+- Formulario de reserva de turnos
+- Sección de contacto con enlaces a WhatsApp y correo
+- Animaciones y efectos visuales
+- Optimizado para móviles y escritorio
 
-2. Abre una terminal y navega hasta la carpeta del proyecto
+## Cómo usar
 
-3. Instala las dependencias ejecutando:
-```bash
-npm install
-```
+1. Descarga el archivo `index.html`
+2. Abre el archivo en tu navegador web favorito
 
-4. Una vez completada la instalación, inicia el servidor de desarrollo:
-```bash
-npm run dev
-```
+¡Eso es todo! No se requiere instalación ni configuración adicional.
 
-5. Abre tu navegador y visita:
-```
-http://localhost:3000
-```
+## Tecnologías utilizadas
 
-## Estructura del Proyecto
-- `/src/app/page.tsx` - Página principal
-- `/src/app/layout.tsx` - Layout principal
-- `/src/components/ui/` - Componentes de UI
-- `/public/` - Archivos estáticos
+- HTML5
+- Tailwind CSS (vía CDN)
+- Google Fonts
+- JavaScript vanilla
 
-## Tecnologías Utilizadas
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Shadcn UI
+## Personalización
 
-## Soporte
-Si tienes alguna pregunta o problema, no dudes en crear un issue en el repositorio.
+Puedes personalizar fácilmente:
+- Colores y estilos modificando las clases de Tailwind
+- Textos e imágenes editando el HTML
+- Enlaces de contacto (WhatsApp, email, etc.)
+- Precios y servicios
